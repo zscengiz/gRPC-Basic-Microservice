@@ -24,6 +24,6 @@ public class Category {
     private String name;
 
     @OneToMany(mappedBy ="category") //hiç çağırmadan yükleme yapacaktır
-    @JsonBackReference
+    @JsonManagedReference
     private List<Product> products;
 }
